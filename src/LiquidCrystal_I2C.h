@@ -41,6 +41,11 @@
   #include <inttypes.h>
 #endif
 
+#ifdef ARDUINO_ARCH_ESP32
+  #include <Arduino.h>
+  #include <Wire.h>
+#endif
+
 // commands
 #define LCD_CLEARDISPLAY 0x01
 #define LCD_RETURNHOME 0x02
